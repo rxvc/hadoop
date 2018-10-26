@@ -31,6 +31,9 @@ function configure() {
     done
 }
 
+ulimit -c unlimited
+ulimit -c -l
+
 configure /etc/hadoop/core-site.xml core CORE_CONF
 configure /etc/hadoop/hdfs-site.xml hdfs HDFS_CONF
 configure /etc/hadoop/yarn-site.xml yarn YARN_CONF

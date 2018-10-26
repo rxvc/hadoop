@@ -1,4 +1,6 @@
-FROM rxvc/openjdk:8-jdk-alpine
+FROM rxvc/jdk:8-jdk-alpine
+#FROM rxvc/openjdk:8-jdk-alpine
+
 MAINTAINER Rodrigo Vallejo <rxvallejoc@gmail.com>
 
 ENV HADOOP_VERSION 2.7.7
